@@ -40,7 +40,7 @@ jobs:
       - run: yarn lint --format junit --out reports/junit/js-lint-results.xml
       - run: .circleci/wait-for-server.sh
       - run:
-          command: yarn test --runInBand --ci --testResultsProcessor="jest-junit"
+          command: yarn test --runInBand --ci --reporters="jest-junit"
           environment:
             JEST_JUNIT_OUTPUT: 'reports/junit/js-test-results.xml'
       - store_test_results:
