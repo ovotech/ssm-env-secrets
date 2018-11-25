@@ -1,7 +1,12 @@
 import { SSM } from 'aws-sdk';
 import { loadSSMSecrets } from '../src';
 
-const ssm = new SSM({ endpoint: `http://localhost:4583`, region: 'eu-west-1' });
+const ssm = new SSM({
+  endpoint: `http://localhost:4583`,
+  region: 'eu-west-1',
+  secretAccessKey: '123',
+  accessKeyId: 'asd',
+});
 
 describe('Integration test', () => {
   it('Should load and decrypt values from ssm', async () => {
