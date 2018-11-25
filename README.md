@@ -1,5 +1,7 @@
 # SSM ENV Secrets
 
+[![CircleCI](https://circleci.com/gh/ovotech/ssm-env-secrets.svg?style=svg&circle-token=d9be710126b12e0271cb77a09d08a7e2129ba112)](https://circleci.com/gh/ovotech/ssm-env-secrets)
+
 This function is loads data from AWS Systems Manager (SSM) Parameter Store. This way you can securely store secrets and retrieve them at runtime in production, but rely on dummy values in dev/testing.
 
 This module ships with TypeScript types.
