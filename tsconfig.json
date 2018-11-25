@@ -3,6 +3,7 @@
     "target": "esnext",
     "sourceMap": true,
     "module": "commonjs",
+    "moduleResolution": "node",
     "esModuleInterop": true
   },
   "include": ["src/**/*"],

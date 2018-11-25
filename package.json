@@ -1,5 +1,5 @@
 {
-  "name": "ssm-env-secrets",
+  "name": "@ovotech/ssm-env-secrets",
   "version": "1.0.0",
   "description": "Load secrets from ssm",
   "main": "dist/cjs/index.js",
